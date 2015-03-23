@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="gameclient.gambatte"
+<addon id="game.libretro.gambatte"
 		name="Gambatte"
 		version="0.5.2"
 		provider-name="Libretro">
 	<requires>
-		<import addon="xbmc.libretro" version="1.0.0"/>
+		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
-	<extension point="xbmc.gameclient"
-			library_android=""
-			library_linux="gambatte_libretro.so"
-			library_osx=""
-			library_windx=""
-			library_wingl="">
+	<extension point="kodi.gameclient"
+                   library_android="libgame.libretro.gambatte.so""
+                   library_linux="game.libretro.gambatte.so"
+                   library_osx=""game.libretro.gambatte.dylib"
+                   library_windx="game.libretro.gambatte.dll"
+                   library_wingl="game.libretro.gambatte.dll">
 		<platforms>Game Boy|Game Boy Color</platforms>
 		<extensions>gb|gbc|dmg</extensions>
 		<allowvfs>true</allowvfs>
@@ -25,8 +25,6 @@ Supported files: .gb, .gbc, .dmg
 
 Source: https://github.com/libretro/gambatte-libretro</description>
 		<disclaimer>Game Boy and Game Boy Color are registered trademarks of Nintendo of America, Inc. Gambatte is not affiliated with or endorsed by any of the companies mentioned.</disclaimer>
-		<platform>linux</platform>
-		<nofanart>true</nofanart>
-		
+		<platform>all</platform>
 	</extension>
 </addon>
