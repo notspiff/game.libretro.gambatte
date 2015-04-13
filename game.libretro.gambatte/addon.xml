@@ -7,9 +7,9 @@
 		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
-                   library_android="libgame.libretro.gambatte.so""
+                   library_android="libgame.libretro.gambatte.so"
                    library_linux="game.libretro.gambatte.so"
-                   library_osx=""game.libretro.gambatte.dylib"
+                   library_osx="game.libretro.gambatte.dylib"
                    library_windx="game.libretro.gambatte.dll"
                    library_wingl="game.libretro.gambatte.dll">
 		<platforms>Game Boy|Game Boy Color</platforms>
@@ -23,7 +23,7 @@
 
 Supported files: .gb, .gbc, .dmg
 
-Source: https://github.com/libretro/gambatte-libretro</description>
+License: GPLv2</description>
 		<disclaimer>Game Boy and Game Boy Color are registered trademarks of Nintendo of America, Inc. Gambatte is not affiliated with or endorsed by any of the companies mentioned.</disclaimer>
 		<platform>all</platform>
 	</extension>
