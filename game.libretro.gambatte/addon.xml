@@ -5,6 +5,7 @@
 		provider-name="Libretro">
 	<requires>
 		<import addon="game.libretro" version="1.0.0"/>
+		<import addon="game.controller.gba" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
                    library_android="libgame.libretro.gambatte.so"
@@ -26,5 +27,6 @@ Supported files: .gb, .gbc, .dmg
 License: GPLv2</description>
 		<disclaimer>Game Boy and Game Boy Color are registered trademarks of Nintendo of America, Inc. Gambatte is not affiliated with or endorsed by any of the companies mentioned.</disclaimer>
 		<platform>all</platform>
+		<nofanart>true</nofanart>
 	</extension>
 </addon>
