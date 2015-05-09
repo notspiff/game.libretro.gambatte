@@ -15,8 +15,8 @@
                    library_wingl="game.libretro.gambatte.dll">
 		<platforms>Game Boy|Game Boy Color</platforms>
 		<extensions>gb|gbc|dmg</extensions>
-		<allowvfs>true</allowvfs>
-		<blockextract>false</blockextract>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Gambatte v0.5.0</summary>
