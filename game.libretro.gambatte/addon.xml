@@ -20,7 +20,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Gambatte v0.5.0</summary>
-		<description>Gambatte is an accuracy-focused, open-source, cross-platform Game Boy Color emulator written in C++. It is based on hundreds of corner case hardware tests, as well as previous documentation and reverse engineering efforts.
+		<description>Gambatte is an accuracy-focused, open-source, cross-platform Game Boy Color emulator written in C++.
 
 Supported files: .gb, .gbc, .dmg
 
