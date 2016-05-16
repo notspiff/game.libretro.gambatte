@@ -8,11 +8,7 @@
 		<import addon="game.controller.gba" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
-                   library_android="libgame.libretro.gambatte.so"
-                   library_linux="game.libretro.gambatte.so"
-                   library_osx="game.libretro.gambatte.dylib"
-                   library_windx="game.libretro.gambatte.dll"
-                   library_wingl="game.libretro.gambatte.dll">
+                   library_@PLATFORM@="@LIBRARY_FILENAME@">
 		<platforms>Game Boy|Game Boy Color</platforms>
 		<extensions>gb|gbc|dmg</extensions>
 		<supports_vfs>true</supports_vfs>
@@ -26,7 +22,7 @@ Supported files: .gb, .gbc, .dmg
 
 License: GPLv2</description>
 		<disclaimer>Game Boy and Game Boy Color are registered trademarks of Nintendo of America, Inc. Gambatte is not affiliated with or endorsed by any of the companies mentioned.</disclaimer>
-		<platform>all</platform>
+		<platform>@PLATFORM@</platform>
 		<nofanart>true</nofanart>
 	</extension>
 </addon>
