@@ -14,11 +14,11 @@ endif()
 
 if("${CORE_SYSTEM_NAME}" STREQUAL "windows")
   find_package(MinGW REQUIRED)
-  set(BUILD_COMMAND ${MINGW_MAKE} -C libgambatte -f Makefile.libretro platform=win ${LIBRETRO_DEBUG})
+  set(BUILD_COMMAND ${MINGW_MAKE} -f Makefile.libretro platform=win ${LIBRETRO_DEBUG})
 elseif("${CORE_SYSTEM_NAME}" STREQUAL "linux")
-  set(BUILD_COMMAND make -C libgambatte -f Makefile.libretro ${LIBRETRO_DEBUG})
+  set(BUILD_COMMAND make -f Makefile.libretro ${LIBRETRO_DEBUG})
 elseif("${CORE_SYSTEM_NAME}" STREQUAL "darwin" OR "${CORE_SYSTEM_NAME}" STREQUAL "osx")
-  set(BUILD_COMMAND make -C libgambatte -f Makefile.libretro platform=osx ${LIBRETRO_DEBUG})
+  set(BUILD_COMMAND make -f Makefile.libretro platform=osx ${LIBRETRO_DEBUG})
 elseif("${CORE_SYSTEM_NAME}" STREQUAL "ios")
   message(FATAL_ERROR "${PROJECT_NAME} needs IOS build command in CMakeLists.txt!")
 elseif("${CORE_SYSTEM_NAME}" STREQUAL "android")
@@ -40,7 +40,7 @@ externalproject_add(gambatte
                     BUILD_IN_SOURCE 1)
 
 #install the generated shared library
-install(FILES ${PROJECT_SOURCE_DIR}/libgambatte/gambatte_libretro${CMAKE_SHARED_LIBRARY_SUFFIX}
+install(FILES ${PROJECT_SOURCE_DIR}/gambatte_libretro${CMAKE_SHARED_LIBRARY_SUFFIX}
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
 
 # write the gambatte-config.cmake script
